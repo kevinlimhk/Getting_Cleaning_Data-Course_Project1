@@ -13,33 +13,32 @@ Function Defination
 ==========================================================================================================
 run_analysis.R(directory)
 
-Input parameter 
-Directory - Directory of data folder and text files.
+    Input parameter 
+    Directory - Directory of data folder and text files.
 
-Ouput
-A text file final.txt will be created in RStudio workspace which contains tidy data set with the average of each variable for each activity and each subject.
+    Ouput
+    A text file final.txt will be created in RStudio workspace which contains tidy data set with the average of each variable for each activity and each subject.
 
 ==========================================================================================================
 Execution Steps
 ==========================================================================================================
-1) Download the file from link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-2) Unzip it and place the main folder "UCI HAR Dataset" in R Studio User Workspace.
-3) Descriptions of files are as follows:
-    - README.txt -> Main text file describing the data and included text files
-    - features_info.txt -> Shows information about the variables used on the feature vector.
-    - features.txt -> List of all features.
-    - activity_labels.txt -> Links the class labels with their activity name.
-    - train/X_train.txt -> Training set.
-    - train/y_train.txt -> Training labels. 
-    - test/X_test.txt -> Test set.
-    - test/y_test.txt -> Test labels.
-    - train/subject_train.txt -> Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-    (We will be ignoring text files in 'train/Inertial Signals' and 'test/Inertial Signals' folders as they are not required in the course assignment)
-4) Make sure run_analysis.R is in the workspace. Run function run_anaylsis.R via RStudio
-    - Source("run_analysis.R")
-    - run_analysis(directory)
-    (directory =  folder where "UCI HAR Dataset" located. leave it blank if "UCI HAR Dataset" is in workspace)
-
+    1) Download the file from link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+    2) Unzip it and place the main folder "UCI HAR Dataset" in R Studio User Workspace.
+    3) Descriptions of files are as follows:
+        - README.txt -> Main text file describing the data and included text files
+        - features_info.txt -> Shows information about the variables used on the feature vector.
+        - features.txt -> List of all features.
+        - activity_labels.txt -> Links the class labels with their activity name.
+        - train/X_train.txt -> Training set.
+        - train/y_train.txt -> Training labels. 
+        - test/X_test.txt -> Test set.
+        - test/y_test.txt -> Test labels.
+        - train/subject_train.txt -> Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+        (We will be ignoring text files in 'train/Inertial Signals' and 'test/Inertial Signals' folders as they are not required in the course assignment)
+    4) Make sure run_analysis.R is in the workspace. Run function run_anaylsis.R via RStudio
+        - Source("run_analysis.R")
+        - run_analysis(directory)
+        (directory =  folder where "UCI HAR Dataset" located. leave it blank if "UCI HAR Dataset" is in workspace)
 
 ==========================================================================================================
 = SCRIPT CODE BREAKDOWN                                                                                  = 
